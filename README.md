@@ -145,6 +145,14 @@ graph LR;
   A --> B;
 ``` 
 
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+
 **Изменение коммита**
 
 --amend рассчитан на работу с последним коммитом (HEAD).
@@ -152,3 +160,10 @@ graph LR;
 Дополнить коммит новыми файлами можно с помощью git commit --amend --no-edit. Благодаря опции --no-edit сообщение к коммиту останется таким, каким и было.
 
 Изменить сообщение к коммиту позволяет команда git commit --amend -m "Обновлённое сообщение коммита".
+
+
+##Источники
+
+https://www.conventionalcommits.org/ru/v1.0.0-beta.4/#%d1%81%d0%bf%d0%b5%d1%86%d0%b8%d1%84%d0%b8%d0%ba%d0%b0%d1%86%d0%b8%d1%8f - Соглашение о коммитах
+
+https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/ - описание создания диаграмм mermaid
